@@ -22,10 +22,11 @@ const checkCwdIsStrapiApp = name => {
 
   try {
     const pkgJSON = require(process.cwd() + '/package.json');
-    if (!_.has(pkgJSON, 'dependencies.strapi')) {
+    if (!_.has(pkgJSON, 'dependencies.@punch-in\/strapi')) {
       logErrorAndExit(name);
     }
   } catch (err) {
+    console.log(err);
     logErrorAndExit(name);
   }
 };
@@ -33,7 +34,7 @@ const checkCwdIsStrapiApp = name => {
 const getLocalScript = name => (...args) => {
   checkCwdIsStrapiApp(name);
 
-  const cmdPath = resolveCwd.silent(`strapi/lib/commands/${name}`);
+  const cmdPath = resolveCwd.silent(`@punch-in/strapi/lib/commands/${name}`);
   if (!cmdPath) {
     console.log(
       `Error loading the local ${yellow(
