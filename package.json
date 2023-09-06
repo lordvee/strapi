@@ -1,15 +1,15 @@
 {
   "name": "@punch-in/strapi",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "An open source headless CMS solution to create and manage your own API. It provides a powerful dashboard and features to make your life easier. Databases supported: MongoDB, MySQL, MariaDB, PostgreSQL, SQLite",
   "homepage": "https://www.punch-in.co.uk",
   "directories": {
-    "lib": "./lib",
-    "bin": "./bin"
+    "lib": "lib",
+    "test": "tests"
   },
   "main": "./lib",
   "bin": {
-    "strapi": "./bin/strapi.js"
+    "strapi": "bin/strapi.js"
   },
   "dependencies": {
     "@koa/cors": "^3.0.0",
@@ -69,24 +69,16 @@
   "scripts": {
     "postinstall": "node lib/utils/success.js"
   },
-  "author": {
-    "email": "hi@strapi.io",
-    "name": "Strapi team",
-    "url": "https://strapi.io"
-  },
+  "author": "Strapi team <hi@strapi.io> (https://strapi.io)",
   "maintainers": [
-    {
-      "name": "Strapi team",
-      "email": "hi@strapi.io",
-      "url": "https://strapi.io"
-    }
+    "Strapi team <hi@strapi.io> (https://strapi.io)"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/strapi/strapi.git"
+    "url": "git://github.com/lordvee/strapi.git"
   },
   "bugs": {
-    "url": "https://github.com/strapi/strapi/issues"
+    "url": "https://github.com/lordvee/strapi/issues"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
@@ -136,5 +128,5 @@
     "react",
     "reactjs"
   ],
-  "gitHead": "231263a3535658bab1e9492c6aaaed8692d62a53"
+  "devDependencies": {}
 }
