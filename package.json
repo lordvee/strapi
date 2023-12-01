@@ -1,16 +1,41 @@
 {
-  "name": "@punch-in/strapi",
-  "version": "1.0.5",
-  "description": "An open source headless CMS solution to create and manage your own API. It provides a powerful dashboard and features to make your life easier. Databases supported: MongoDB, MySQL, MariaDB, PostgreSQL, SQLite",
-  "homepage": "https://www.punch-in.co.uk",
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
+  "_from": "@punch-in/strapi@^1.0.7",
+  "_id": "@punch-in/strapi@1.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-4rFw+/0m7bGJuAlQ9q+SwHtN1bwHCeMkTeXxKYuFM8rXg4WhFyClFS0lpBJ9+1WwVdlBaLu6vjbNjGepyTulug==",
+  "_location": "/@punch-in/strapi",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@punch-in/strapi@^1.0.7",
+    "name": "@punch-in/strapi",
+    "escapedName": "@punch-in%2fstrapi",
+    "scope": "@punch-in",
+    "rawSpec": "^1.0.7",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.7"
   },
-  "main": "./lib",
+  "_requiredBy": [
+    "/",
+    "/@punch-in/strapi-admin"
+  ],
+  "_resolved": "https://registry.npmjs.org/@punch-in/strapi/-/strapi-1.0.7.tgz",
+  "_shasum": "421ac7639cae10d77099aca2f3037325b28684fb",
+  "_spec": "@punch-in/strapi@^1.0.7",
+  "_where": "/webapps/strapiProject/3.6.8/defaultProject",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "https://strapi.io"
+  },
   "bin": {
     "strapi": "bin/strapi.js"
   },
+  "bugs": {
+    "url": "https://github.com/lordvee/strapi/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "@koa/cors": "^3.0.0",
     "async": "^2.1.2",
@@ -66,25 +91,18 @@
     "strapi-generate-service": "3.6.8",
     "strapi-utils": "3.6.8"
   },
-  "scripts": {
-    "postinstall": "node lib/utils/success.js"
-  },
-  "author": "Strapi team <hi@strapi.io> (https://strapi.io)",
-  "maintainers": [
-    "Strapi team <hi@strapi.io> (https://strapi.io)"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/lordvee/strapi.git"
-  },
-  "bugs": {
-    "url": "https://github.com/lordvee/strapi/issues"
+  "deprecated": false,
+  "description": "An open source headless CMS solution to create and manage your own API. It provides a powerful dashboard and features to make your life easier. Databases supported: MongoDB, MySQL, MariaDB, PostgreSQL, SQLite",
+  "devDependencies": {},
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://www.punch-in.co.uk",
   "keywords": [
     "strapi",
     "cms",
@@ -128,5 +146,22 @@
     "react",
     "reactjs"
   ],
-  "devDependencies": {}
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "./lib",
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "https://strapi.io"
+    }
+  ],
+  "name": "@punch-in/strapi",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lordvee/strapi.git"
+  },
+  "scripts": {
+    "postinstall": "node lib/utils/success.js"
+  },
+  "version": "1.0.7"
 }
